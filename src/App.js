@@ -1,14 +1,28 @@
+/*Components*/
+import {
+    Contact,
+    ViewContact,
+    Navbar,
+    Contacts,
+    SearchContact,
+    spinner,
+    EditContact,
+    AddContact
+} from "./components"
+/*Hocks*/
 import {useState} from "react";
-import Navbar from "./components/Navbar";
+
+/*Css*/
 import './App.css';
-import Contacts from "./components/contact/Contacts";
 
 const App = () => {
-    const [getContacts,setContact]=useState([]);
+    const [getContacts, setContact] = useState([]);
+    const [loading, setLoading] = useState(false);
+
     return (
         <div className="App">
             <Navbar/>
-            <Contacts contacts={getContacts}/>
+            <Contacts contacts={getContacts} loading={loading}/>
 
         </div>
     );
