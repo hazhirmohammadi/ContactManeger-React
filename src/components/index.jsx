@@ -10,5 +10,5 @@ export {default as Contact } from './contact/Contact';
 
 
 /* --Other Component*/
-export {default as spinner } from './spinner';
+export {default as spinner } from './Spinner';
 export {default as Navbar } from './Navbar';

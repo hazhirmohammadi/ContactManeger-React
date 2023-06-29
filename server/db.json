@@ -1,0 +1,64 @@
+{
+  "contacts": [
+    {
+      "fullname": "hazhir mohammadi",
+      "photo": [
+        "hazhir"
+      ],
+      "mobile": "09057562772",
+      "email": "hazhir6690@gmail.com",
+      "job": "programmer",
+      "group": "1",
+      "id": 1
+    },
+    {
+      "fullname": "rezgar mohammadi",
+      "photo": "https://www.google.com/imgres?imgurl=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2022%2F07%2FJava-Logo.png&tbnid=kdcmbBGAGkO9eM&vet=12ahUKEwiZycec8N3_AhWumScCHcXxCo0QMygBegUIARDdAQ..i&imgrefurl=https%3A%2F%2Flogos-world.net%2Fjava-logo%2F&docid=IvI-Yker4lC4aM&w=3840&h=2160&q=java&client=ubuntu-sn&ved=2ahUKEwiZycec8N3_AhWumScCHcXxCo0QMygBegUIARDdAQ",
+      "mobile": "09057568888",
+      "email": "rezgar@gmail.com",
+      "job": "programmer",
+      "group": "1",
+      "id": 2
+    },
+    {
+      "fullname": "solyman nadri",
+      "photo": "",
+      "mobile": "0938562111",
+      "email": "noyal@gmail.com",
+      "job": "programmer",
+      "group": "1",
+      "id": 3
+    },
+    {
+      "fullname": "ker",
+      "photo": "tDekM&aAcL5&s$HT7j%jXIGahPhrsa5a(KR9Ej&jTb#SgkycZ86I+s598gAu&x7+",
+      "mobile": "157909204",
+      "email": "none@gmail.com",
+      "job": "server",
+      "group": "5",
+      "id": 4
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "friends"
+    },
+    {
+      "id": "3",
+      "name": "Colleague"
+    },
+    {
+      "id": "4",
+      "name": "family"
+    },
+    {
+      "id": "5",
+      "name": "Familiar"
+    }
+  ]
+}
