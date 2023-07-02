@@ -1,35 +1,35 @@
-import SearchContact from "./contact/SearchContact";
-import {PURPLE, BACKGROUND} from '../helpers/Color'
-import {useLocation} from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
-const Navbar = ({query, search}) => {
-    const location = useLocation();
-    return (
-        <nav className="navbar navbar-dark navbar-expand-sm shadow-lg" style={{backgroundColor: BACKGROUND}}>
-            <div className="container">
-                <div className="row w-100">
-                    <div className="col">
-                        <div
-                            className="navbar-brand"
-                        ><i
-                            className="fa fa-id-badge"
-                            style={{color: PURPLE}}>
-                        </i>
-                            {" "}web application manager{" "}
-                            <span style={{color: PURPLE}}>contact</span>
-                        </div>
+import SearchContact from "./Contacts/SearchContact";
 
-                    </div>
-                    {
-                        location.pathname === "/contacts" ? (
-                            <div className="col">
-                                <SearchContact query={query} search={search}/>
-                            </div>
-                        ) : null}
+import { BACKGROUND, PURPLE } from "../helpers/colors";
 
-                </div>
+const Navbar = () => {
+  const location = useLocation();
+
+  return (
+    <nav
+      className="navbar navbar-dark navbar-expand-sm shadow-lg"
+      style={{ backgroundColor: BACKGROUND }}
+    >
+      <div className="container">
+        <div className="row w-100">
+          <div className="col">
+            <div className="navbar-brand">
+              <i className="fas fa-id-badge" style={{ color: PURPLE }} />
+              Web application management{"  "}
+              <span style={{ color: PURPLE }}>Contact</span>
             </div>
-        </nav>
-    )
-}
+          </div>
+          {location.pathname === "/contacts" ? (
+            <div className="col">
+              <SearchContact />
+            </div>
+          ) : null}
+        </div>
+      </div>
+    </nav>
+  );
+};
+
 export default Navbar;
