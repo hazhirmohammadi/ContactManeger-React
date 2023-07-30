@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 
 import SearchContact from "./Contacts/SearchContact";
-
+import ColorFull from "../hoc/ColorFull";
 import { BACKGROUND, PURPLE } from "../helpers/colors";
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav
       className="navbar navbar-dark navbar-expand-sm shadow-lg"
-      style={{ backgroundColor: BACKGROUND }}
+      // style={{ backgroundColor: BACKGROUND }}
     >
       <div className="container">
         <div className="row w-100">
@@ -32,4 +32,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default ColorFull(Navbar);
